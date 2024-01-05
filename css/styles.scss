@@ -1,0 +1,128 @@
+// CSS BoilerPlate
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #cc9544;
+
+  #panel {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    background-color: #fff;
+
+    #p-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20%;
+      width: 100%;
+      height: 100px;
+      background-color: #603601;
+      color: #fff;
+
+      .elem {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+        .box {
+          color: #361500;
+          font-weight: 700;
+          font-size: 25px;
+          padding: 10px 20px;
+          background-color: #fff;
+          border-radius: 5px;
+
+          &:hover{
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+
+    #p-bottom{
+        padding: 20px;
+        height: calc(100% - 100px);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        h1{
+          color: #361500;
+        }
+
+        .bubble{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #603601;
+            color: #fff;
+            font-weight: 400;
+
+            &:hover{
+                background-color: #4a2a04;
+                cursor: pointer;
+            }
+        }
+
+        .btn{
+            outline: none;
+            background-color: #603601;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 4px 6px;
+            border-radius: 5px;
+            &:hover{
+                background-color: #4a2a04;
+                cursor: pointer;
+            }
+        }
+        .start-btn{
+            outline: none;
+            background-color: #603601;
+            color: #fff;
+            font-weight: 700;
+            font-size: 22px;
+            padding: 8px 24px;
+            border-radius: 25px;
+            &:hover{
+                background-color: #4a2a04;
+                cursor: pointer;
+            }
+        }
+    }
+  }
+  footer{
+    margin-bottom: 10px;
+    color: #361500;
+  }
+}
